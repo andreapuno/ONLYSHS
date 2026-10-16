@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: black;
+    background-color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #555555;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: auto;
+    padding: 12px 20px;
+}
+
+.brand-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    border-bottom-color: #E8A33D;
+}
+
+.button {
+    display: inline-block;
+    background-color: #FFD600;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #E6C000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.hero {
+    padding: 75px 0;
+    min-height: 400px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.15;
+    border-left: 9px solid #E8A33D;
+    padding-left: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 650px;
+}
+
+.section {
+    padding: 40px 0 60px;
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.2;
+    border-left: 9px solid #E8A33D;
+    padding-left: 18px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.card {
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    padding: 28px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.page-intro {
+    color: #777777;
+    margin-bottom: 25px;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 500px;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid #CCCCCC;
+}
+
+th {
+    background-color: #858585;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+.open {
+    color: #8B1E1E;
+    font-weight: bold;
+}
+
+.review {
+    color: #B58A00;
+    font-weight: bold;
+}
+
+.resolved {
+    color: green;
+    font-weight: bold;
+}
+
+.ongoing {
+    color: #9B5A00;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.login-layout {
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+    padding: 45px 0;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 520px;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.login-card h1 {
+    border-left: 9px solid gold;
+    padding-left: 18px;
+    font-size: 36px;
+}
+
+.login-card p {
+    color: grey;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #BBBBBB;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.login-card .button {
+    width: 100%;
+    font-size: 18px;
+}
+
+.form-note {
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .header-inner {
+        padding: 12px;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    nav {
+        gap: 2px;
+    }
+
+    nav a {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 45px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section-title {
+        font-size: 29px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .login-card {
+        padding: 24px;
+    }
+}
